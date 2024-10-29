@@ -16,7 +16,7 @@ namespace DivisaoEstruturaRepetitiva
 
             CultureInfo CI = CultureInfo.InvariantCulture;
 
-            Console.Write("Quantos casos serõ digitados? ");
+            Console.Write("Quantos casos serão digitados? ");
             n = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < n; i++)
@@ -27,7 +27,6 @@ namespace DivisaoEstruturaRepetitiva
                 Console.Write("Digite o denominador: ");
                 denominador = int.Parse(Console.ReadLine());
 
-                divisao = (double)numerador / denominador;
 
                 if (denominador == 0)
                 {
@@ -35,6 +34,7 @@ namespace DivisaoEstruturaRepetitiva
                 }
                 else
                 {
+                    divisao = (double)numerador / denominador;
                     Console.WriteLine($"DIVISAO = {divisao.ToString("F2", CI)}");
                 }
             }
